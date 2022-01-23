@@ -1,4 +1,4 @@
-FROM fluent/fluentd-kubernetes-daemonset:v1-debian-elasticsearch
+FROM fluent/fluentd-kubernetes-daemonset:v1.14-debian-elasticsearch6-1
 
 RUN set -ex \
 && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
