@@ -15,3 +15,6 @@
 
 [官方k8s配置文件](https://github.com/fluent/fluentd-kubernetes-daemonset/blob/master/fluentd-daemonset-elasticsearch.yaml)
 
+## 说明
+
+因为`es 6.x`不允许一个`index`多个`type`, 原先`5.x`支持。所以暂时把`reserve_data`设置为`false`, 否则多个容器不同格式的数据不能导入`es`。
