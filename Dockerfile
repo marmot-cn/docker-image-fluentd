@@ -1,3 +1,4 @@
+# credit 
 FROM fluent/fluentd-kubernetes-daemonset:v1.14-debian-elasticsearch6-1
 
 RUN set -ex \
